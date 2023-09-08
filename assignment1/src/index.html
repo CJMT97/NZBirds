@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <title>Birds of New Zealand</title>
+    <link href="./style.css" rel="stylesheet">
+    <script defer src="birds.js"></script>
+</head>
+
+<body class="container">
+
+    <header>
+        <div id="menu">
+            <div id="menu-button">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="header-content">
+            <img id="kiwi1" src="icon.png" alt="Kiwi Image">
+            <h1>Birds of Aotearoa</h1>
+            <img id="kiwi2" src="icon.png" alt="Kiwi Image">
+        </div>
+    </header>
+
+    <aside class="filter">
+        <h3>Filter Birds</h3>
+        <p class="small-font-black">Search</p>
+        <form><input id="search" type="text" autocomplete="off" placeholder="Enter"></form>
+
+        <br>
+        <p class="small-font-black">Conservation Status</p>
+        <select id="conservation-status">
+            <option value="All">All</option>
+            <option value="Not Threatened">Not Threatened</option>
+            <option value="Naturally Uncommon">Naturally Uncommon</option>
+            <option value="Relict">Relict</option>
+            <option value="Recovering">Recovering</option>
+            <option value="Declining">Declining</option>
+            <option value="Nationally Increasing">Nationally Increasing</option>
+            <option value="Nationally Vulnerable">Nationally Vulnerable</option>
+            <option value="Nationally Endangered">Nationally Endangered</option>
+            <option value="Nationally Critical">Nationally Critical</option>
+            <option value="Data Deficient">Data Deficient</option>
+
+        </select>
+
+        <br><br>
+        <p class="small-font-black">Sort By</p>
+        <select id="sort-by">
+            <optgroup label="---">
+                <option value="0">None</option>
+            </optgroup>
+            <optgroup label="Sort by Size">
+                <option value="1">Lightest to Heaviest</option>
+                <option value="2">Heaviest to Lightest</option>
+            </optgroup>
+            <optgroup label="Sort Alphabetically">
+                <option value="3">Alphabetically (Māori)</option>
+                <option value="4">Reverse Alphabetically (Māori)</option>
+                <option value="5">Alphabetically (English)</option>
+                <option value="6">Reverse Alphabetically (English)</option>
+            </optgroup>
+            <optgroup label="Sort by Conservation-Status">
+                <option value="7">Not Threatened to Data Deficient</option>
+                <option value="8">Data Deficient to Not Threatened</option>
+            </optgroup>
+
+        </select>
+
+        <button id="filter-button" type="submit">FILTER RESULTS</button>
+        <hr class="dashed">
+
+        <h3>Conservation Status</h3>
+
+        <div class="p-content">
+            <div class="Not-Threatened"></div>Not-Threatened
+        </div>
+        <div class="p-content">
+            <div class="Naturally-Uncommon"></div>Naturally-Uncommon
+        </div>
+        <div class="p-content">
+            <div class="Relicit"></div>Relicit
+        </div>
+        <div class="p-content">
+            <div class="Recovering"></div>Recovering
+        </div>
+        <div class="p-content">
+            <div class="Declining"></div>Declining
+        </div>
+        <div class="p-content">
+            <div class="Nationally-Increasing"></div>Nationally-Increasing
+        </div>
+        <div class="p-content">
+            <div class="Nationally-Vulnerable"></div>Nationally-Vulnerable
+        </div>
+        <div class="p-content">
+            <div class="Nationally-Endangered"></div>Nationally-Endangered
+        </div>
+        <div class="p-content">
+            <div class="Nationally-Critical"></div>Nationally-Critical
+        </div>
+        <div class="p-content">
+            <div class="Data-Deficient"></div>Data-Deficient
+        </div>
+    </aside>
+
+    <main>
+        <div class="bird">
+        </div>
+    </main>
+
+    <footer>
+        <p>Data licensed from <a href="https://www.birdsnz.org.nz/">Birds New Zealand </a>for educational use within the
+            University of Otago.</p>
+    </footer>
+
+</body>
+
+</html>
