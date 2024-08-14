@@ -31,7 +31,7 @@ function createBirdElement() {
             let eName = info[i].english_name.toLowerCase();
             let fName = info[i].family.toLowerCase();
             let oNames = info[i].other_names;
-            let isMatch = removeDiacritics(mName).startsWith(removeDiacritics(search)) || removeDiacritics(eName).startsWith(removeDiacritics(search)) || removeDiacritics(fName).startsWith(removeDiacritics(search)) || search === "";
+            let isMatch = removeDiacritics(mName).includes(removeDiacritics(search)) || removeDiacritics(eName).includes(removeDiacritics(search)) || removeDiacritics(fName).includes(removeDiacritics(search)) || search === "";
 
 
 
