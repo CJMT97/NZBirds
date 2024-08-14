@@ -37,7 +37,7 @@ function createBirdElement() {
 
             // loop through the othernames to see if its a match
             for (let i = 0; i < oNames.length; i++) {
-                if (removeDiacritics(oNames[i].toLowerCase()).startsWith(removeDiacritics(search))) {
+                if (removeDiacritics(oNames[i].toLowerCase()).includes(removeDiacritics(search))) {
                     isMatch = true;
                 }
             }
